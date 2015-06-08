@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F1077" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F1077" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="zMw-HL-qxJ">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--City Chooser View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Transee" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="CityChooserViewController" customModule="Transee" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,16 +17,140 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BackgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="Qt8-c0-U46">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="Qt8-c0-U46">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transee" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GVS-ua-gHs">
+                                <rect key="frame" x="16" y="28" width="568" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выберите город" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X6i-FX-CLv">
+                                <rect key="frame" x="16" y="63" width="568" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="VUB-FS-YS8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="VUB-FS-YS8"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="evB-Uy-q8e">
+                                <rect key="frame" x="16" y="113" width="584" height="487"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="KNt-YX-2Lg"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="NqL-Eq-3jI"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Qt8-c0-U46" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="314-Sd-plk"/>
+                            <constraint firstItem="GVS-ua-gHs" firstAttribute="centerX" secondItem="Qt8-c0-U46" secondAttribute="centerX" id="5Ka-0F-MbF"/>
+                            <constraint firstItem="GVS-ua-gHs" firstAttribute="leading" secondItem="X6i-FX-CLv" secondAttribute="leading" id="AdV-qm-Gfq"/>
+                            <constraint firstItem="GVS-ua-gHs" firstAttribute="trailing" secondItem="X6i-FX-CLv" secondAttribute="trailing" id="D0T-Yj-OXS"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="GVS-ua-gHs" secondAttribute="bottom" constant="551" id="Hcr-eA-3zN"/>
+                            <constraint firstItem="GVS-ua-gHs" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="Ipz-YD-YgL"/>
+                            <constraint firstItem="GVS-ua-gHs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="JFM-5E-gJB"/>
+                            <constraint firstItem="evB-Uy-q8e" firstAttribute="trailing" secondItem="Qt8-c0-U46" secondAttribute="trailing" id="TAf-iS-ErO"/>
+                            <constraint firstItem="Qt8-c0-U46" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="WwM-Fx-zTg"/>
+                            <constraint firstItem="evB-Uy-q8e" firstAttribute="leading" secondItem="X6i-FX-CLv" secondAttribute="leading" id="cbg-av-cRt"/>
+                            <constraint firstItem="Qt8-c0-U46" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="fTB-uK-SdG"/>
+                            <constraint firstItem="evB-Uy-q8e" firstAttribute="top" secondItem="X6i-FX-CLv" secondAttribute="bottom" constant="8" symbolic="YES" id="nWJ-iO-RX3"/>
+                            <constraint firstAttribute="trailing" secondItem="Qt8-c0-U46" secondAttribute="trailing" id="skL-Qq-LoK"/>
+                            <constraint firstItem="evB-Uy-q8e" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="u2c-9U-K3Y"/>
+                            <constraint firstItem="X6i-FX-CLv" firstAttribute="top" secondItem="GVS-ua-gHs" secondAttribute="bottom" constant="8" symbolic="YES" id="y0a-9U-7Q6"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Hcr-eA-3zN"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="syS-Vs-PH3"/>
+                    <connections>
+                        <outlet property="citiesTableView" destination="evB-Uy-q8e" id="W6a-9s-bZS"/>
+                        <segue destination="o8H-gb-u39" kind="show" identifier="Show Transports Of Selected City" id="06t-wP-lkz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="389" y="249"/>
+            <point key="canvasLocation" x="867" y="195"/>
+        </scene>
+        <!--Transport Lists View Controller-->
+        <scene sceneID="l3L-Vq-kIl">
+            <objects>
+                <viewController id="o8H-gb-u39" customClass="TransportListsViewController" customModule="Transee" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WpX-at-gkk"/>
+                        <viewControllerLayoutGuide type="bottom" id="SFA-5P-grl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5Ft-wn-pFk">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="p4m-bB-dPw">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Город" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xvP-t4-D0m">
+                                <rect key="frame" x="16" y="28" width="568" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SFA-5P-grl" firstAttribute="top" secondItem="xvP-t4-D0m" secondAttribute="bottom" constant="551" id="2Uj-cD-tn7"/>
+                            <constraint firstItem="p4m-bB-dPw" firstAttribute="leading" secondItem="5Ft-wn-pFk" secondAttribute="leading" id="69d-Mv-QNe"/>
+                            <constraint firstItem="xvP-t4-D0m" firstAttribute="leading" secondItem="5Ft-wn-pFk" secondAttribute="leadingMargin" id="8Rv-HW-rLI"/>
+                            <constraint firstItem="xvP-t4-D0m" firstAttribute="centerX" secondItem="p4m-bB-dPw" secondAttribute="centerX" id="JDh-7d-GtT"/>
+                            <constraint firstItem="p4m-bB-dPw" firstAttribute="top" secondItem="5Ft-wn-pFk" secondAttribute="top" id="Ok4-4J-fLP"/>
+                            <constraint firstItem="p4m-bB-dPw" firstAttribute="bottom" secondItem="SFA-5P-grl" secondAttribute="top" id="c2x-uG-K0s"/>
+                            <constraint firstItem="xvP-t4-D0m" firstAttribute="top" secondItem="WpX-at-gkk" secondAttribute="bottom" constant="8" symbolic="YES" id="cpV-A5-jOS"/>
+                            <constraint firstAttribute="trailing" secondItem="p4m-bB-dPw" secondAttribute="trailing" id="qwk-dw-vFk"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="2Uj-cD-tn7"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="currentCityLabel" destination="xvP-t4-D0m" id="Wfs-v5-9kK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gzc-19-qXp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1531" y="195"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="S1q-BC-6PI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zMw-HL-qxJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Bve-QN-ekt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="CIj-lg-f6s"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="msX-Ei-j0i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="199" y="195"/>
         </scene>
     </scenes>
     <resources>

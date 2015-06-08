@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		4C05D4E21B26117C007D0A57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C05D4E11B26117C007D0A57 /* AppDelegate.swift */; };
-		4C05D4E41B26117C007D0A57 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C05D4E31B26117C007D0A57 /* ViewController.swift */; };
+		4C05D4E41B26117C007D0A57 /* CityChooserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C05D4E31B26117C007D0A57 /* CityChooserViewController.swift */; };
 		4C05D4E71B26117C007D0A57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C05D4E51B26117C007D0A57 /* Main.storyboard */; };
 		4C05D4E91B26117C007D0A57 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C05D4E81B26117C007D0A57 /* Images.xcassets */; };
 		4C05D4EC1B26117C007D0A57 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C05D4EA1B26117C007D0A57 /* LaunchScreen.xib */; };
 		4C05D4F81B26117C007D0A57 /* TranseeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C05D4F71B26117C007D0A57 /* TranseeTests.swift */; };
+		4C05D5051B26179F007D0A57 /* Cities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C05D5031B26179F007D0A57 /* Cities.swift */; };
+		4C05D5061B26179F007D0A57 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C05D5041B26179F007D0A57 /* City.swift */; };
+		4C05D5081B2617B5007D0A57 /* TransportListsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C05D5071B2617B5007D0A57 /* TransportListsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +32,16 @@
 		4C05D4DC1B26117C007D0A57 /* Transee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C05D4E01B26117C007D0A57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C05D4E11B26117C007D0A57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4C05D4E31B26117C007D0A57 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4C05D4E31B26117C007D0A57 /* CityChooserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityChooserViewController.swift; sourceTree = "<group>"; };
 		4C05D4E61B26117C007D0A57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4C05D4E81B26117C007D0A57 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4C05D4EB1B26117C007D0A57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		4C05D4F11B26117C007D0A57 /* TranseeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TranseeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C05D4F61B26117C007D0A57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C05D4F71B26117C007D0A57 /* TranseeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranseeTests.swift; sourceTree = "<group>"; };
+		4C05D5031B26179F007D0A57 /* Cities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cities.swift; sourceTree = "<group>"; };
+		4C05D5041B26179F007D0A57 /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		4C05D5071B2617B5007D0A57 /* TransportListsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransportListsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +83,10 @@
 		4C05D4DE1B26117C007D0A57 /* Transee */ = {
 			isa = PBXGroup;
 			children = (
-				4C05D4E11B26117C007D0A57 /* AppDelegate.swift */,
-				4C05D4E31B26117C007D0A57 /* ViewController.swift */,
+				4C05D5011B261781007D0A57 /* Data Model */,
+				4C05D5071B2617B5007D0A57 /* TransportListsViewController.swift */,
+				4C05D4E31B26117C007D0A57 /* CityChooserViewController.swift */,
 				4C05D4E51B26117C007D0A57 /* Main.storyboard */,
-				4C05D4E81B26117C007D0A57 /* Images.xcassets */,
-				4C05D4EA1B26117C007D0A57 /* LaunchScreen.xib */,
 				4C05D4DF1B26117C007D0A57 /* Supporting Files */,
 			);
 			path = Transee;
@@ -90,6 +95,9 @@
 		4C05D4DF1B26117C007D0A57 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4C05D4E81B26117C007D0A57 /* Images.xcassets */,
+				4C05D4EA1B26117C007D0A57 /* LaunchScreen.xib */,
+				4C05D4E11B26117C007D0A57 /* AppDelegate.swift */,
 				4C05D4E01B26117C007D0A57 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -110,6 +118,23 @@
 				4C05D4F61B26117C007D0A57 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4C05D5011B261781007D0A57 /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				4C05D5021B261796007D0A57 /* Cities */,
+			);
+			name = "Data Model";
+			sourceTree = "<group>";
+		};
+		4C05D5021B261796007D0A57 /* Cities */ = {
+			isa = PBXGroup;
+			children = (
+				4C05D5031B26179F007D0A57 /* Cities.swift */,
+				4C05D5041B26179F007D0A57 /* City.swift */,
+			);
+			name = Cities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,7 +237,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C05D4E41B26117C007D0A57 /* ViewController.swift in Sources */,
+				4C05D5081B2617B5007D0A57 /* TransportListsViewController.swift in Sources */,
+				4C05D5051B26179F007D0A57 /* Cities.swift in Sources */,
+				4C05D4E41B26117C007D0A57 /* CityChooserViewController.swift in Sources */,
+				4C05D5061B26179F007D0A57 /* City.swift in Sources */,
 				4C05D4E21B26117C007D0A57 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
