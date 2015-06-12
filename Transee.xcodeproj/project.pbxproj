@@ -16,6 +16,7 @@
 		4C05D5051B26179F007D0A57 /* Cities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C05D5031B26179F007D0A57 /* Cities.swift */; };
 		4C05D5061B26179F007D0A57 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C05D5041B26179F007D0A57 /* City.swift */; };
 		4C05D5081B2617B5007D0A57 /* TransportListsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C05D5071B2617B5007D0A57 /* TransportListsViewController.swift */; };
+		7832042A92E4E961B960DFFC /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0D7FC1D3396104396633AC /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2536CF13B77E3EC45AD5E47C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		4C05D4DC1B26117C007D0A57 /* Transee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C05D4E01B26117C007D0A57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C05D4E11B26117C007D0A57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +44,8 @@
 		4C05D5031B26179F007D0A57 /* Cities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cities.swift; sourceTree = "<group>"; };
 		4C05D5041B26179F007D0A57 /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		4C05D5071B2617B5007D0A57 /* TransportListsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransportListsViewController.swift; sourceTree = "<group>"; };
+		6A0D7FC1D3396104396633AC /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC6A1CD9E5680974CE2A6A3F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7832042A92E4E961B960DFFC /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,12 +67,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30880672235FED8437ECEF38 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A0D7FC1D3396104396633AC /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4C05D4D31B26117C007D0A57 = {
 			isa = PBXGroup;
 			children = (
 				4C05D4DE1B26117C007D0A57 /* Transee */,
 				4C05D4F41B26117C007D0A57 /* TranseeTests */,
 				4C05D4DD1B26117C007D0A57 /* Products */,
+				56C006E9B56E1128D3754053 /* Pods */,
+				30880672235FED8437ECEF38 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,6 +152,15 @@
 			name = Cities;
 			sourceTree = "<group>";
 		};
+		56C006E9B56E1128D3754053 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AC6A1CD9E5680974CE2A6A3F /* Pods.debug.xcconfig */,
+				2536CF13B77E3EC45AD5E47C /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,9 +168,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C05D4FB1B26117C007D0A57 /* Build configuration list for PBXNativeTarget "Transee" */;
 			buildPhases = (
+				8BD8CBB4911A2C82889B9FA4 /* Check Pods Manifest.lock */,
 				4C05D4D81B26117C007D0A57 /* Sources */,
 				4C05D4D91B26117C007D0A57 /* Frameworks */,
 				4C05D4DA1B26117C007D0A57 /* Resources */,
+				0594AFAFB34EB1E5EDCC52BE /* Embed Pods Frameworks */,
+				6D5D89D1E54EB68DA2BED40C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -231,6 +258,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0594AFAFB34EB1E5EDCC52BE /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D5D89D1E54EB68DA2BED40C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8BD8CBB4911A2C82889B9FA4 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4C05D4D81B26117C007D0A57 /* Sources */ = {
@@ -364,6 +439,7 @@
 		};
 		4C05D4FC1B26117C007D0A57 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC6A1CD9E5680974CE2A6A3F /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Transee/Info.plist;
@@ -374,6 +450,7 @@
 		};
 		4C05D4FD1B26117C007D0A57 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2536CF13B77E3EC45AD5E47C /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Transee/Info.plist;
@@ -435,6 +512,7 @@
 				4C05D4FD1B26117C007D0A57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4C05D4FE1B26117C007D0A57 /* Build configuration list for PBXNativeTarget "TranseeTests" */ = {
 			isa = XCConfigurationList;
@@ -443,6 +521,7 @@
 				4C05D5001B26117C007D0A57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

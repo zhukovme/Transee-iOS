@@ -30,7 +30,7 @@ class CityChooserViewController: UIViewController {
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let cell = citiesTableView.dequeueReusableCellWithIdentifier(CityChooser.CellIdentifier) as UITableViewCell
+        let cell = citiesTableView.dequeueReusableCellWithIdentifier(CityChooser.CellIdentifier) as! UITableViewCell
         
         cell.textLabel?.text = Array(Cities.citiesDict.keys).sorted(<)[indexPath.row]
         cell.textLabel?.textColor = UIColor.whiteColor()
