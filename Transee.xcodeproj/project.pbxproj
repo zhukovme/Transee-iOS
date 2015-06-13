@@ -14,8 +14,21 @@
 		4C05D4EC1B26117C007D0A57 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C05D4EA1B26117C007D0A57 /* LaunchScreen.xib */; };
 		4C05D4F81B26117C007D0A57 /* TranseeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C05D4F71B26117C007D0A57 /* TranseeTests.swift */; };
 		4C05D5051B26179F007D0A57 /* Cities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C05D5031B26179F007D0A57 /* Cities.swift */; };
-		4C05D5061B26179F007D0A57 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C05D5041B26179F007D0A57 /* City.swift */; };
 		4C05D5081B2617B5007D0A57 /* TransportListsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C05D5071B2617B5007D0A57 /* TransportListsViewController.swift */; };
+		4C6EC7941B2B940500EB4613 /* TransportType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6EC7931B2B940500EB4613 /* TransportType.swift */; };
+		4C6EC7981B2B94C700EB4613 /* TransportItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6EC7971B2B94C700EB4613 /* TransportItem.swift */; };
+		4CA122D91B2C1F40006D0CF3 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA122D81B2C1F40006D0CF3 /* City.swift */; };
+		4CA122DC1B2C267E006D0CF3 /* RoutesItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA122DB1B2C267E006D0CF3 /* RoutesItem.swift */; };
+		4CA122DE1B2C2EC6006D0CF3 /* LatLon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA122DD1B2C2EC6006D0CF3 /* LatLon.swift */; };
+		4CA122E01B2C2F08006D0CF3 /* RoutesType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA122DF1B2C2F08006D0CF3 /* RoutesType.swift */; };
+		4CA122E31B2C3128006D0CF3 /* PositionsVehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA122E21B2C3128006D0CF3 /* PositionsVehicle.swift */; };
+		4CA122E51B2C32C9006D0CF3 /* PositionsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA122E41B2C32C9006D0CF3 /* PositionsItem.swift */; };
+		4CA122E71B2C33D6006D0CF3 /* PositionsType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA122E61B2C33D6006D0CF3 /* PositionsType.swift */; };
+		4CA122EA1B2C35D2006D0CF3 /* TransportInfoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA122E91B2C35D2006D0CF3 /* TransportInfoItem.swift */; };
+		4CA122ED1B2C399B006D0CF3 /* StationsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA122EC1B2C399B006D0CF3 /* StationsItem.swift */; };
+		4CA122F01B2C3B30006D0CF3 /* StationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA122EF1B2C3B30006D0CF3 /* StationInfo.swift */; };
+		4CA122F21B2C3BE4006D0CF3 /* StationInfoTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA122F11B2C3BE4006D0CF3 /* StationInfoTransport.swift */; };
+		4CA122F41B2C4984006D0CF3 /* StationInfoForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA122F31B2C4984006D0CF3 /* StationInfoForecast.swift */; };
 		7832042A92E4E961B960DFFC /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0D7FC1D3396104396633AC /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -42,8 +55,21 @@
 		4C05D4F61B26117C007D0A57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C05D4F71B26117C007D0A57 /* TranseeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranseeTests.swift; sourceTree = "<group>"; };
 		4C05D5031B26179F007D0A57 /* Cities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cities.swift; sourceTree = "<group>"; };
-		4C05D5041B26179F007D0A57 /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		4C05D5071B2617B5007D0A57 /* TransportListsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransportListsViewController.swift; sourceTree = "<group>"; };
+		4C6EC7931B2B940500EB4613 /* TransportType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransportType.swift; sourceTree = "<group>"; };
+		4C6EC7971B2B94C700EB4613 /* TransportItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransportItem.swift; sourceTree = "<group>"; };
+		4CA122D81B2C1F40006D0CF3 /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		4CA122DB1B2C267E006D0CF3 /* RoutesItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutesItem.swift; sourceTree = "<group>"; };
+		4CA122DD1B2C2EC6006D0CF3 /* LatLon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LatLon.swift; sourceTree = "<group>"; };
+		4CA122DF1B2C2F08006D0CF3 /* RoutesType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutesType.swift; sourceTree = "<group>"; };
+		4CA122E21B2C3128006D0CF3 /* PositionsVehicle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PositionsVehicle.swift; sourceTree = "<group>"; };
+		4CA122E41B2C32C9006D0CF3 /* PositionsItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PositionsItem.swift; sourceTree = "<group>"; };
+		4CA122E61B2C33D6006D0CF3 /* PositionsType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PositionsType.swift; sourceTree = "<group>"; };
+		4CA122E91B2C35D2006D0CF3 /* TransportInfoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransportInfoItem.swift; sourceTree = "<group>"; };
+		4CA122EC1B2C399B006D0CF3 /* StationsItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationsItem.swift; sourceTree = "<group>"; };
+		4CA122EF1B2C3B30006D0CF3 /* StationInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationInfo.swift; sourceTree = "<group>"; };
+		4CA122F11B2C3BE4006D0CF3 /* StationInfoTransport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationInfoTransport.swift; sourceTree = "<group>"; };
+		4CA122F31B2C4984006D0CF3 /* StationInfoForecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationInfoForecast.swift; sourceTree = "<group>"; };
 		6A0D7FC1D3396104396633AC /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC6A1CD9E5680974CE2A6A3F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -139,6 +165,13 @@
 			isa = PBXGroup;
 			children = (
 				4C05D5021B261796007D0A57 /* Cities */,
+				4C6EC7991B2B9A1400EB4613 /* Transport */,
+				4CA122E81B2C351C006D0CF3 /* Transport Info */,
+				4CA122DA1B2C2652006D0CF3 /* Routes */,
+				4CA122EB1B2C374F006D0CF3 /* Stations */,
+				4CA122EE1B2C3AE9006D0CF3 /* Station Info */,
+				4CA122E11B2C30DD006D0CF3 /* Positions */,
+				4CA122DD1B2C2EC6006D0CF3 /* LatLon.swift */,
 			);
 			name = "Data Model";
 			sourceTree = "<group>";
@@ -147,9 +180,63 @@
 			isa = PBXGroup;
 			children = (
 				4C05D5031B26179F007D0A57 /* Cities.swift */,
-				4C05D5041B26179F007D0A57 /* City.swift */,
+				4CA122D81B2C1F40006D0CF3 /* City.swift */,
 			);
 			name = Cities;
+			sourceTree = "<group>";
+		};
+		4C6EC7991B2B9A1400EB4613 /* Transport */ = {
+			isa = PBXGroup;
+			children = (
+				4C6EC7971B2B94C700EB4613 /* TransportItem.swift */,
+				4C6EC7931B2B940500EB4613 /* TransportType.swift */,
+			);
+			name = Transport;
+			sourceTree = "<group>";
+		};
+		4CA122DA1B2C2652006D0CF3 /* Routes */ = {
+			isa = PBXGroup;
+			children = (
+				4CA122DB1B2C267E006D0CF3 /* RoutesItem.swift */,
+				4CA122DF1B2C2F08006D0CF3 /* RoutesType.swift */,
+			);
+			name = Routes;
+			sourceTree = "<group>";
+		};
+		4CA122E11B2C30DD006D0CF3 /* Positions */ = {
+			isa = PBXGroup;
+			children = (
+				4CA122E21B2C3128006D0CF3 /* PositionsVehicle.swift */,
+				4CA122E41B2C32C9006D0CF3 /* PositionsItem.swift */,
+				4CA122E61B2C33D6006D0CF3 /* PositionsType.swift */,
+			);
+			name = Positions;
+			sourceTree = "<group>";
+		};
+		4CA122E81B2C351C006D0CF3 /* Transport Info */ = {
+			isa = PBXGroup;
+			children = (
+				4CA122E91B2C35D2006D0CF3 /* TransportInfoItem.swift */,
+			);
+			name = "Transport Info";
+			sourceTree = "<group>";
+		};
+		4CA122EB1B2C374F006D0CF3 /* Stations */ = {
+			isa = PBXGroup;
+			children = (
+				4CA122EC1B2C399B006D0CF3 /* StationsItem.swift */,
+			);
+			name = Stations;
+			sourceTree = "<group>";
+		};
+		4CA122EE1B2C3AE9006D0CF3 /* Station Info */ = {
+			isa = PBXGroup;
+			children = (
+				4CA122EF1B2C3B30006D0CF3 /* StationInfo.swift */,
+				4CA122F11B2C3BE4006D0CF3 /* StationInfoTransport.swift */,
+				4CA122F31B2C4984006D0CF3 /* StationInfoForecast.swift */,
+			);
+			name = "Station Info";
 			sourceTree = "<group>";
 		};
 		56C006E9B56E1128D3754053 /* Pods */ = {
@@ -313,10 +400,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C05D5081B2617B5007D0A57 /* TransportListsViewController.swift in Sources */,
+				4CA122ED1B2C399B006D0CF3 /* StationsItem.swift in Sources */,
 				4C05D5051B26179F007D0A57 /* Cities.swift in Sources */,
+				4CA122E31B2C3128006D0CF3 /* PositionsVehicle.swift in Sources */,
+				4C6EC7981B2B94C700EB4613 /* TransportItem.swift in Sources */,
+				4CA122F41B2C4984006D0CF3 /* StationInfoForecast.swift in Sources */,
+				4CA122E71B2C33D6006D0CF3 /* PositionsType.swift in Sources */,
+				4C6EC7941B2B940500EB4613 /* TransportType.swift in Sources */,
+				4CA122DC1B2C267E006D0CF3 /* RoutesItem.swift in Sources */,
+				4CA122F21B2C3BE4006D0CF3 /* StationInfoTransport.swift in Sources */,
+				4CA122DE1B2C2EC6006D0CF3 /* LatLon.swift in Sources */,
 				4C05D4E41B26117C007D0A57 /* CityChooserViewController.swift in Sources */,
-				4C05D5061B26179F007D0A57 /* City.swift in Sources */,
+				4CA122EA1B2C35D2006D0CF3 /* TransportInfoItem.swift in Sources */,
 				4C05D4E21B26117C007D0A57 /* AppDelegate.swift in Sources */,
+				4CA122E51B2C32C9006D0CF3 /* PositionsItem.swift in Sources */,
+				4CA122D91B2C1F40006D0CF3 /* City.swift in Sources */,
+				4CA122F01B2C3B30006D0CF3 /* StationInfo.swift in Sources */,
+				4CA122E01B2C2F08006D0CF3 /* RoutesType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

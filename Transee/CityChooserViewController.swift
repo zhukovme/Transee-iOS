@@ -25,14 +25,14 @@ class CityChooserViewController: UIViewController {
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return Cities.citiesDict.count
+        return CitiesVars.citiesDict.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell = citiesTableView.dequeueReusableCellWithIdentifier(CityChooser.CellIdentifier) as! UITableViewCell
         
-        cell.textLabel?.text = Array(Cities.citiesDict.keys).sorted(<)[indexPath.row]
+        cell.textLabel?.text = Array(CitiesVars.citiesDict.keys).sorted(<)[indexPath.row]
         cell.textLabel?.textColor = UIColor.whiteColor()
         
         cell.backgroundColor = UIColor.clearColor()
@@ -57,7 +57,7 @@ class CityChooserViewController: UIViewController {
                 switch identifier {
                     case CityChooser.SegueIdentifier:
                         if let selectedCity = sender as? String {
-                            Cities.currentCity = selectedCity
+                            CitiesVars.currentCity = selectedCity
                         }
                     default: break
                 }
