@@ -11,17 +11,17 @@ import Runes
 
 struct PositionsType {
     let type: String
-    let items: [PositionsItem]?
+    let items: [PositionsItem]
 }
 
 extension PositionsType: Decodable {
-    static func create(type: String)(items: [PositionsItem]?) -> PositionsType {
+    static func create(type: String)(items: [PositionsItem]) -> PositionsType {
         return PositionsType(type: type, items: items)
     }
     
     static func decode(json: JSON) -> Decoded<PositionsType> {
         return PositionsType.create
             <^> json <| "type"
-            <*> json <||? "items"
+            <*> json <|| "items"
     }
 }

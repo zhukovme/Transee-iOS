@@ -15,9 +15,10 @@
 		4C05D4F81B26117C007D0A57 /* TranseeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C05D4F71B26117C007D0A57 /* TranseeTests.swift */; };
 		4C05D5051B26179F007D0A57 /* Cities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C05D5031B26179F007D0A57 /* Cities.swift */; };
 		4C05D5081B2617B5007D0A57 /* TransportListsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C05D5071B2617B5007D0A57 /* TransportListsViewController.swift */; };
+		4C6282D61B2D9A00001AB1CF /* Localization.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C6282D51B2D9A00001AB1CF /* Localization.plist */; };
 		4C6EC7941B2B940500EB4613 /* TransportType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6EC7931B2B940500EB4613 /* TransportType.swift */; };
 		4C6EC7981B2B94C700EB4613 /* TransportItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6EC7971B2B94C700EB4613 /* TransportItem.swift */; };
-		4CA122D91B2C1F40006D0CF3 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA122D81B2C1F40006D0CF3 /* City.swift */; };
+		4C9911ED1B2D7D7A009E815B /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9911EC1B2D7D7A009E815B /* City.swift */; };
 		4CA122DC1B2C267E006D0CF3 /* RoutesItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA122DB1B2C267E006D0CF3 /* RoutesItem.swift */; };
 		4CA122DE1B2C2EC6006D0CF3 /* LatLon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA122DD1B2C2EC6006D0CF3 /* LatLon.swift */; };
 		4CA122E01B2C2F08006D0CF3 /* RoutesType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA122DF1B2C2F08006D0CF3 /* RoutesType.swift */; };
@@ -56,9 +57,10 @@
 		4C05D4F71B26117C007D0A57 /* TranseeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranseeTests.swift; sourceTree = "<group>"; };
 		4C05D5031B26179F007D0A57 /* Cities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cities.swift; sourceTree = "<group>"; };
 		4C05D5071B2617B5007D0A57 /* TransportListsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransportListsViewController.swift; sourceTree = "<group>"; };
+		4C6282D51B2D9A00001AB1CF /* Localization.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Localization.plist; sourceTree = "<group>"; };
 		4C6EC7931B2B940500EB4613 /* TransportType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransportType.swift; sourceTree = "<group>"; };
 		4C6EC7971B2B94C700EB4613 /* TransportItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransportItem.swift; sourceTree = "<group>"; };
-		4CA122D81B2C1F40006D0CF3 /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		4C9911EC1B2D7D7A009E815B /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		4CA122DB1B2C267E006D0CF3 /* RoutesItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutesItem.swift; sourceTree = "<group>"; };
 		4CA122DD1B2C2EC6006D0CF3 /* LatLon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LatLon.swift; sourceTree = "<group>"; };
 		4CA122DF1B2C2F08006D0CF3 /* RoutesType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutesType.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				4C05D4E31B26117C007D0A57 /* CityChooserViewController.swift */,
 				4C05D4E51B26117C007D0A57 /* Main.storyboard */,
 				4C05D4DF1B26117C007D0A57 /* Supporting Files */,
+				4C6282D51B2D9A00001AB1CF /* Localization.plist */,
 			);
 			path = Transee;
 			sourceTree = "<group>";
@@ -180,7 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				4C05D5031B26179F007D0A57 /* Cities.swift */,
-				4CA122D81B2C1F40006D0CF3 /* City.swift */,
+				4C9911EC1B2D7D7A009E815B /* City.swift */,
 			);
 			name = Cities;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C05D4E71B26117C007D0A57 /* Main.storyboard in Resources */,
+				4C6282D61B2D9A00001AB1CF /* Localization.plist in Resources */,
 				4C05D4EC1B26117C007D0A57 /* LaunchScreen.xib in Resources */,
 				4C05D4E91B26117C007D0A57 /* Images.xcassets in Resources */,
 			);
@@ -401,6 +405,7 @@
 			files = (
 				4C05D5081B2617B5007D0A57 /* TransportListsViewController.swift in Sources */,
 				4CA122ED1B2C399B006D0CF3 /* StationsItem.swift in Sources */,
+				4C9911ED1B2D7D7A009E815B /* City.swift in Sources */,
 				4C05D5051B26179F007D0A57 /* Cities.swift in Sources */,
 				4CA122E31B2C3128006D0CF3 /* PositionsVehicle.swift in Sources */,
 				4C6EC7981B2B94C700EB4613 /* TransportItem.swift in Sources */,
@@ -414,7 +419,6 @@
 				4CA122EA1B2C35D2006D0CF3 /* TransportInfoItem.swift in Sources */,
 				4C05D4E21B26117C007D0A57 /* AppDelegate.swift in Sources */,
 				4CA122E51B2C32C9006D0CF3 /* PositionsItem.swift in Sources */,
-				4CA122D91B2C1F40006D0CF3 /* City.swift in Sources */,
 				4CA122F01B2C3B30006D0CF3 /* StationInfo.swift in Sources */,
 				4CA122E01B2C2F08006D0CF3 /* RoutesType.swift in Sources */,
 			);

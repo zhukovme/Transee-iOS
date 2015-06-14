@@ -12,43 +12,11 @@ import Argo
 class TransportListsViewController: UIViewController {
 
     @IBOutlet weak var currentCityLabel: UILabel! {
-        didSet { currentCityLabel.text = CitiesVars.currentCity }
+        didSet { currentCityLabel.text = Cities.currentCity }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.hidden = true
-//        getTranportJson()
-        getCities()
-    }
-    
-    func getCities() {
-        let data = getJSON("https://transee.in/api/v1/cities")
-        
-        let json: AnyObject? = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions(0), error: nil)
-        
-        if let j: AnyObject = json {
-            if let cities: [Cities] = decode(j) {
-                println(cities)
-            }
-        }
-    }
-    
-    func getTranportJson() {
-        let data = getJSON("https://transee.in/api/v1/cities/\(CitiesVars.citiesDict[CitiesVars.currentCity]!)")
-        
-        let json: AnyObject? = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions(0), error: nil)
-        
-        if let j: AnyObject = json {
-            if let transportTypes: [TransportType] = decode(j) {
-                for transport in transportTypes {
-                    println(transport.type)
-                }
-            }
-        }
-    }
-    
-    func getJSON(urlToRequest: String) -> NSData{
-        return NSData(contentsOfURL: NSURL(string: urlToRequest)!)!
     }
 }

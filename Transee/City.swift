@@ -2,7 +2,7 @@
 //  City.swift
 //  Transee
 //
-//  Created by Michael on 13/06/15.
+//  Created by Michael on 14/06/15.
 //  Copyright (c) 2015 Transee. All rights reserved.
 //
 
@@ -11,6 +11,12 @@ import Runes
 
 struct City {
     let id: String
+    
+    var name: String {
+        get {
+            return (Cities.citiesDict as NSDictionary).allKeysForObject(id).first as! String
+        }
+    }
 }
 
 extension City: Decodable {
@@ -19,7 +25,12 @@ extension City: Decodable {
     }
     
     static func decode(json: JSON) -> Decoded<City> {
-        return City.create
-            <^> json <| "id"
+        switch json {
+            case let .String(s):
+                return City.create
+                    <^> .fromOptional(s)
+        default:
+            return .TypeMismatch("\(json) is not an String")
+        }
     }
 }

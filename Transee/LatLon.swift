@@ -20,8 +20,13 @@ extension LatLon: Decodable {
     }
     
     static func decode(json: JSON) -> Decoded<LatLon> {
-        return LatLon.create
-            <^> json <| ""
-            <*> json <| ""
+        switch json {
+            case let .Array(a):
+                return LatLon.create
+                    <^> .fromOptional(Double.decode(a.first!).value)
+                    <*> .fromOptional(Double.decode(a.last!).value)
+            default:
+                return .TypeMismatch("\(json) is not an Array")
+        }
     }
 }

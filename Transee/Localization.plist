@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>astrakhan</key>
+	<string>Астрахань</string>
+	<key>barnaul</key>
+	<string>Барнаул</string>
+	<key>veliky_novgorod</key>
+	<string>Великий Новгород</string>
+	<key>vladivostok</key>
+	<string>Владивосток</string>
+	<key>vladimir</key>
+	<string>Владимир</string>
+	<key>voronezh</key>
+	<string>Воронеж</string>
+	<key>kostroma</key>
+	<string>Кострома</string>
+	<key>yaroslavl</key>
+	<string>Ярославль</string>
+</dict>
+</plist>
